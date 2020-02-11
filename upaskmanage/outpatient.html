@@ -1,0 +1,126 @@
+<html>
+
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <style>
+        .clearleftright {
+            padding-left: 0;
+            padding-right: 0;
+            text-align: left !important;
+        }
+
+        .blackborder {
+            border: 1px solid black;
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="bodypart">
+        <div class="container-fluid">
+            <div class="row form-group">
+                <div class="col-lg-12 col-sm-12">
+                    <div class="row blackborder">
+                        <div class="row form-group col-lg-12 col-sm-12" style="margin-top: 15px;">
+                            <div class="col-lg-3 col-sm-3">
+                                姓名：
+                                <span id="name"></span>
+                            </div>
+                            <div class="col-lg-3 col-sm-3">
+                                性别：
+                                <span id="sex"></span>
+                            </div>
+                            <div class="col-lg-3 col-sm-3">
+                                出生日期：
+                                <span id="birthday"></span>
+                            </div>
+                            <div class="col-lg-3 col-sm-3">
+                                身份证号：
+                                <span id="idnum"></span>
+                            </div>
+                        </div>
+                        <div class="row form-group col-lg-12 col-sm-12">
+                            <div class="col-lg-3 col-sm-3">
+                                家庭住址：
+                                <span id="address"></span>
+                            </div>
+                            <div class="col-lg-3 col-sm-3">
+                                联系电话：
+                                <span id="tel"></span>
+                            </div>
+                            <div class="col-lg-3 col-sm-3">
+                                结算方式：
+                                <span id="settlement"></span>
+                            </div>
+                            <div class="col-lg-3 col-sm-3">
+                                医保卡号：
+                                <span id="insurancenum"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-sm-12">
+                    <ul id="myTab" class="nav nav-tabs">
+                        <li class="active">
+                            <a href="#baseinf" data-toggle="tab">
+                                基本信息
+                            </a>
+                        </li>
+                        <li><a href="#prescription" data-toggle="tab">处方情况</a></li>
+                        <li>
+                            <a href="#test" id="myTabDrop1" data-toggle="tab">检验情况
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#check" id="myTabDrop1" data-toggle="tab">检查情况
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#healthlist" id="myTabDrop1" data-toggle="tab">健康档案
+                            </a>
+                        </li>
+                    </ul>
+                    <div id="myTabContent" class="tab-content">
+                        <div class="tab-pane fade in active" id="baseinf">
+                            <p>菜鸟教程是一个提供最新的web技术站点，本站免费提供了建站相关的技术文档，帮助广大web技术爱好者快速入门并建立自己的网站。菜鸟先飞早入行——学的不仅是技术，更是梦想。</p>
+                        </div>
+                        <div class="tab-pane fade" id="prescription">
+                            <p>iOS 是一个由苹果公司开发和发布的手机操作系统。最初是于 2007 年首次发布 iPhone、iPod Touch 和 Apple
+                                TV。iOS 派生自 OS X，它们共享 Darwin 基础。OS X 操作系统是用在苹果电脑上，iOS 是苹果的移动版本。</p>
+                        </div>
+                        <div class="tab-pane fade" id="test">
+                            <p>jMeter 是一款开源的测试软件。它是 100% 纯 Java 应用程序，用于负载和性能测试。</p>
+                        </div>
+                        <div class="tab-pane fade" id="check">
+                            <p>Enterprise Java Beans（EJB）是一个创建高度可扩展性和强大企业级应用程序的开发架构，部署在兼容应用程序服务器（比如 JBOSS、Web Logic 等）的
+                                J2EE
+                                上。
+                            </p>
+                        </div>
+                        <div class="tab-pane fade" id="healthlist">
+                            <p>Enterprise Java Beans（EJB）是一个创建高度可扩展性和强大企业级应用程序的开发架构，部署在兼容应用程序服务器（比如 JBOSS、Web Logic 等）的
+                                J2EE
+                                上。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
