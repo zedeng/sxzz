@@ -1,0 +1,61 @@
+#bigData-platform {
+    /* padding-left: 20px; */
+}
+
+.banner {
+    padding-left: 20px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    color: #fff;
+    background: rgb(0, 153, 255);
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+}
+
+.left-nav {
+    float: left;
+    width: 15%;
+    height: 640px;
+    background: rgb(0, 153, 255);
+}
+
+.left-nav .nav-item {
+    text-align: center;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    background: rgb(231, 231, 231);
+    border: 1px solid #333;
+    cursor: pointer;
+}
+
+.left-nav .nav-item a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: #333;
+}
+
+.nav-item:hover {
+    background: rgb(131, 131, 131);
+}
+
+.left-nav .actived-item {
+    background: rgb(131, 131, 131);
+}
+
+.second-level {
+    display: block;
+}
+
+.right-content {
+    width: 85%;
+    height: 640px;
+    display: inline-block;
+    background: #fff;
+}

@@ -1,0 +1,131 @@
+<!-- 接诊管理 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+    <link href="http://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./reception.css">
+    <link rel="stylesheet" href="../../css/commont.css">
+</head>
+
+<body id="reception">
+    <div class="bodypart">
+        <div class="container-fluid">
+            <form class="form-horizontal">
+                <div class="row form-group div-wrap">
+                    <div class="col-lg-3 col-sm-3">
+                        <label class="label-style">姓名：</label>
+                        <input type="text" class="form-control input-style" style="width: 167px">
+                    </div>
+                    <div class="col-lg-3 col-sm-3 clearleftright">
+                        <label class="label-style">身份证：</label>
+                        <input type="text" class="form-control input-style" style="width: 180px">
+                    </div>
+                    <div class="col-lg-3 col-sm-3">
+                        <label class="label-style">性别：</label>
+
+                        <select id="sex" class="form-control input-style" style="width: 150px">
+                            <option value="男">男</option>
+                            <option value="女">女</option>
+                        </select>
+
+                    </div>
+                    <div class="col-lg-3 col-sm-3">
+                        <div class="row">
+                            <label class="label-style">申请时间：</label>
+                            <input type="text" id="stime" class="form-control input-style" style="width: 80px">
+                            <span>至</span>
+                            <input type="text" id="etime" class="form-control input-style" style="width: 80px">
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row form-group">
+                    <div class="col-lg-3 col-sm-3">
+                        <div class="row">
+                            <label class="label-style">接诊时间：</label>
+                            <input type="text" id="rstime" class="form-control input-style" style="width: 80px">
+                            <span>至</span>
+                            <input type="text" id="retime" class="form-control input-style" style="width: 80px">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-3 clearleftright">
+                        <label class="label-style">转出医院：</label>
+                        <input type="text" class="form-control input-style" style="width: 180px">
+                    </div>
+                    <div class="col-lg-3 col-sm-3">
+                        <label class="label-style">状态：</label>
+
+                        <select id="status" class="form-control input-style" style="width: 150px">
+                            <option value="未接诊">未接诊</option>
+                            <option value="已接诊">已接诊</option>
+                            <option value="驳回">驳回</option>
+                        </select>
+
+                    </div>
+                    <div class="col-lg-3 col-sm-3">
+                        <div class="row">
+                            <button class="btn btn-primary btn-bg" style="margin-left: 10px;">查询</button>
+                            <button class="btn btn-primary btn-bg" style="margin-left: 20px">重置</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+            <div class="row" style="margin: 0 1px;">
+                <table class="table table-bordered table-style" id="reception-table">
+                    <thead>
+                        <tr>
+                            <th style="width:5%;">序号</th>
+                            <th style="width: 5%;">姓名</th>
+                            <th style="width: 5%;">性别</th>
+                            <th style="width: 10%;">身份证号</th>
+                            <th style="width: 17%;">转出医院</th>
+                            <th style="width: 10%;">预约科室</th>
+                            <th style="width: 10%;">预约医生</th>
+                            <th style="width: 15%;">申请时间</th>
+                            <th style="width: 8%;">状态</th>
+                            <th style="width: 20%;">操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="recept-pagination">
+                <nav aria-label="Page navigation">
+                    <ul class="pagination pagination-style">
+                        <li>
+                            <a href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li>
+                            <a href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.bootcss.com/jquery/1.9.1/jquery.min.js"></script>
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="./reception.js"></script>
+</body>
+
+</html>
