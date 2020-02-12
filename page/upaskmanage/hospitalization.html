@@ -1,0 +1,333 @@
+<html>
+
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <style>
+        .clearleftright {
+            padding-left: 0;
+            padding-right: 0;
+            text-align: left !important;
+        }
+        .topword{
+            padding-right: 15px;
+            width: auto;
+        }
+        .tab-pane{
+            padding: 15px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="bodypart">
+        <div class="container-fluid">
+            <div class="row form-group">
+                <div class="col-lg-12 col-sm-12">
+                    <div class="row blackborder">
+                        <div class="row form-group col-lg-12 col-sm-12" style="margin-top: 15px;">
+                            <div class="col-lg-3 col-sm-3">
+                                姓名：
+                                <span id="name"></span>
+                            </div>
+                            <div class="col-lg-3 col-sm-3">
+                                性别：
+                                <span id="sex"></span>
+                            </div>
+                            <div class="col-lg-3 col-sm-3">
+                                出生日期：
+                                <span id="birthday"></span>
+                            </div>
+                            <div class="col-lg-3 col-sm-3">
+                                身份证号：
+                                <span id="idnum"></span>
+                            </div>
+                        </div>
+                        <div class="row form-group col-lg-12 col-sm-12">
+                            <div class="col-lg-3 col-sm-3">
+                                家庭住址：
+                                <span id="address"></span>
+                            </div>
+                            <div class="col-lg-3 col-sm-3">
+                                联系电话：
+                                <span id="tel"></span>
+                            </div>
+                            <div class="col-lg-3 col-sm-3">
+                                结算方式：
+                                <span id="settlement"></span>
+                            </div>
+                            <div class="col-lg-3 col-sm-3">
+                                医保卡号：
+                                <span id="insurancenum"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-sm-12">
+                    <ul id="myTab" class="nav nav-tabs">
+                        <li class="active">
+                            <a href="#index" data-toggle="tab">
+                                病案首页
+                            </a>
+                        </li>
+                        <li><a href="#doctoradvice" data-toggle="tab">住院医嘱</a></li>
+                        <li>
+                            <a href="#test" id="myTabDrop1" data-toggle="tab">检验情况</a>
+                        </li>
+                        <li>
+                            <a href="#check" id="myTabDrop1" data-toggle="tab">检查情况</a>
+                        </li>
+                        <li>
+                            <a href="#operative " id="myTabDrop1" data-toggle="tab">手术记录</a>
+                        </li>
+                        <li>
+                            <a href="#summary" id="myTabDrop1" data-toggle="tab">出院小结</a>
+                        </li>
+                        <li>
+                            <a href="#healthlist" id="myTabDrop1" data-toggle="tab">健康档案</a>
+                        </li>
+                    </ul>
+                    <div id="myTabContent" class="tab-content">
+                        <div class="tab-pane fade in active" id="index">
+                            <div class="row">
+                                <div class="col-lg-3 col-sm-3">
+                                    <span>医疗机构：</span>
+                                    <span>留园社区卫生服务中心</span>
+                                </div>
+                                <div class="col-lg-3 col-sm-3">
+                                    <span>医疗费用支付方式：</span>
+                                    <span>全自费</span>
+                                </div>
+                                <div class="col-lg-3 col-sm-3">
+                                    <span>住院号：</span>
+                                    <span>20101010101</span>
+                                </div>
+                                <div class="col-lg-3 col-sm-3">
+                                    <span>病案号：</span>
+                                    <span>202020220</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-3 col-sm-3">
+                                    <span>就诊卡类型：</span>
+                                    <span></span>
+                                </div>
+                                <div class="col-lg-3 col-sm-3">
+                                    <span>就诊卡号码：</span>
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-3 col-sm-3">
+                                    <span>姓名</span>
+                                    <span>张三</span>
+                                </div>
+                                <div class="col-lg-3 col-sm-3">
+                                    <span>性别：</span>
+                                    <span>男</span>
+                                </div>
+                                <div class="col-lg-3 col-sm-3">
+                                    <span>出生年月：</span>
+                                    <span>1967年6月19日</span>
+                                </div>
+                                <div class="col-lg-1 col-sm-1">
+                                    <span>年龄：</span>
+                                    <span>22</span>
+                                </div>
+                                <div class="col-lg-2 col-sm-2">
+                                    <span>身份证：</span>
+                                    <span>341022199709192117</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-3 col-sm-3">
+                                    <span>国籍：</span>
+                                    <span></span>
+                                </div>
+                                <div class="col-lg-3 col-sm-3">
+                                    <span>民族：</span>
+                                    <span></span>
+                                </div>
+                                <div class="col-lg-3 col-sm-3">
+                                    <span>职业：</span>
+                                    <span></span>
+                                </div>
+                                <div class="col-lg-3 col-sm-3">
+                                    <span>婚姻：</span>
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-10 col-sm-10">
+                                    <span>现住址：</span>
+                                    <span></span>
+                                </div>
+                                <div class="col-lg-2 col-sm-2">
+                                    <span>邮编：</span>
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-10 col-sm-10">
+                                    <span>户籍地址：</span>
+                                    <span></span>
+                                </div>
+                                <div class="col-lg-2 col-sm-2">
+                                    <span>邮编：</span>
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-3 col-sm-3">
+                                    <span>联系人姓名：</span>
+                                    <span></span>
+                                </div>
+                                <div class="col-lg-3 col-sm-3">
+                                    <span>关系：</span>
+                                    <span></span>
+                                </div>
+                                <div class="col-lg-3 col-sm-3">
+                                    <span>地址：</span>
+                                    <span></span>
+                                </div>
+                                <div class="col-lg-3 col-sm-3">
+                                    <span>电话：</span>
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-3 col-sm-3">
+                                    <span>入院日期：</span>
+                                    <span></span>
+                                </div>
+                                <div class="col-lg-3 col-sm-3">
+                                    <span>入院科别：</span>
+                                    <span></span>
+                                </div>
+                                <div class="col-lg-3 col-sm-3">
+                                    <span>病室：</span>
+                                    <span></span>
+                                </div>
+                                <div class="col-lg-3 col-sm-3">
+                                    <span>转科科别：</span>
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-3 col-sm-3">
+                                    <span>出院日期：</span>
+                                    <span></span>
+                                </div>
+                                <div class="col-lg-3 col-sm-3">
+                                    <span>出院科别：</span>
+                                    <span></span>
+                                </div>
+                                <div class="col-lg-3 col-sm-3">
+                                    <span>病室：</span>
+                                    <span></span>
+                                </div>
+                                <div class="col-lg-3 col-sm-3">
+                                    <span>实际住院：</span>
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-9 col-sm-9">
+                                    <span>门（急诊诊断）：</span>
+                                    <span></span>
+                                </div>
+                                <div class="col-lg-3 col-sm-3">
+                                    <span>入院情况：</span>
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-3 col-sm-3">
+                                    <span>出院主要诊断：</span>
+                                    <span></span>
+                                </div>
+                                <div class="col-lg-3 col-sm-3">
+                                    <span>编码：</span>
+                                    <span></span>
+                                </div>
+                                <div class="col-lg-3 col-sm-3">
+                                    <span>入院病情：</span>
+                                    <span></span>
+                                </div>
+                                <div class="col-lg-3 col-sm-3">
+                                    <span>治疗转归：</span>
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12 col-sm-12">
+                                    <span>描述：</span>
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12 col-sm-12">
+                                    <span>出院其他诊断：</span>
+                                    <span></span>
+                                </div>
+                            </div>
+                            <!-- <table class="table table-bordered"> -->
+                            <table class="table table-bordered table-condensed">
+                                <tr>
+                                    <th>出院诊断：</th>
+                                    <th>编码</th>
+                                    <th>出院病情</th>
+                                    <th>治疗转归</th>
+                                </tr>
+                                <tr>
+                                    <td>主要诊断：</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>主要诊断描述：</td>
+                                    <td colspan="3"></td>
+                                </tr>
+                                <tr>
+                                    <td>其他诊断1：</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="tab-pane fade" id="doctoradvice">
+                            2
+                        </div>
+                        <div class="tab-pane fade" id="test">
+                            3
+                        </div>
+                        <div class="tab-pane fade" id="check">
+                            4
+                        </div>
+                        <div class="tab-pane fade" id="operative">
+                            5
+                        </div>
+                        <div class="tab-pane fade" id="summary">
+                            6
+                        </div>
+                        <div class="tab-pane fade" id="healthlist">
+                            7
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
