@@ -19,6 +19,37 @@
             margin-left: 0px;
             margin-right: 0px;
         }
+
+        .shizixianzuo {
+            height: 16px;
+            border-bottom: 1px solid;
+            border-right: 1px solid;
+            margin-top: -10px;
+            margin-left: 0px;
+        }
+
+        .shizixianyou {
+            height: 16px;
+            border-bottom: 1px solid;
+            margin-top: -10px;
+        }
+
+        .rightline {
+            border-right: 1px solid;
+            padding-top: 5px;
+        }
+
+        .bottomline {
+            height: 2px;
+            margin-left: 0px;
+            border-bottom: 1px solid;
+        }
+        .plusbottom{
+            margin-bottom: 15px;
+        }
+        .plustop{
+            margin-top: 20px;
+        }
     </style>
 
 </head>
@@ -94,26 +125,360 @@
                     </ul>
                     <div id="myTabContent" class="tab-content">
                         <div class="tab-pane fade in active" id="baseinf">
-                            <p>菜鸟教程是一个提供最新的web技术站点，本站免费提供了建站相关的技术文档，帮助广大web技术爱好者快速入门并建立自己的网站。菜鸟先飞早入行——学的不仅是技术，更是梦想。</p>
+                            <div class="col-lg-12 col-sm-12 plustop">
+                                <div class="row">
+                                    <div class="col-lg-1 col-sm-1 plusbottom">诊断：</div>
+                                    <div class="col-lg-11 col-sm-11 plusbottom" id="diagnose"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-1 col-sm-1 plusbottom">病情描述：</div>
+                                    <div class="col-lg-11 col-sm-11 plusbottom" id="illdescription"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-3 col-sm-3 plusbottom">
+                                        <span>就诊机构：</span>
+                                        <span id="mechanism"></span>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-3 plusbottom">
+                                        <span>就诊科室：</span>
+                                        <span id="department"></span>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-3 plusbottom">
+                                        <span>医生：</span>
+                                        <span id="doctorname"></span>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-3 plusbottom">
+                                        <span>就诊类型：</span>
+                                        <span id="class"></span>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-3 plusbottom">
+                                        <span>就诊时间：</span>
+                                        <span id="time"></span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="tab-pane fade" id="prescription">
-                            <p>iOS 是一个由苹果公司开发和发布的手机操作系统。最初是于 2007 年首次发布 iPhone、iPod Touch 和 Apple
-                                TV。iOS 派生自 OS X，它们共享 Darwin 基础。OS X 操作系统是用在苹果电脑上，iOS 是苹果的移动版本。</p>
+                            <div class="col-lg-12 col-sm-12 plustop">
+                                <div class="row">
+                                    <div class="col-lg-1 col-sm-1 plusbottom">处方编号：</div>
+                                    <div class="col-lg-11 col-sm-11 plusbottom" id="diagnose"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-4 col-sm-4 plusbottom"><span>开方时间：</span><span id="kaifangshijian"></span>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-4 plusbottom"><span>开方机构：</span><span id="kaifangjigou"></span>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-4 plusbottom"><span>开方医生：</span><span id="kaifangyishen"></span>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-4 plusbottom"><span>皮试：</span><span id="pishi"></span></div>
+                                    <div class="col-lg-4 col-sm-4 plusbottom"><span>皮试结果：</span><span id="pishijieguo"></span>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-4 plusbottom"><span>是否输液：</span><span id="shifoushuye"></span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12 col-sm-12">
+                                        <table class="table table-bordered ">
+                                            <thead>
+                                                <tr>
+                                                    <th>序号</th>
+                                                    <th>药品名称</th>
+                                                    <th>规格</th>
+                                                    <th>剂量</th>
+                                                    <th>剂量单位</th>
+                                                    <th>频率</th>
+                                                    <th>使用途径</th>
+                                                    <th>数量</th>
+                                                    <th>单位</th>
+                                                    <th>用药备注</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>药品A</td>
+                                                    <td>0.6*12</td>
+                                                    <td>0.6</td>
+                                                    <td>克</td>
+                                                    <td>2</td>
+                                                    <td>口服 </td>
+                                                    <td>2</td>
+                                                    <td>盒</td>
+                                                    <td></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="tab-pane fade" id="test">
-                            <p>jMeter 是一款开源的测试软件。它是 100% 纯 Java 应用程序，用于负载和性能测试。</p>
+                            <div class="col-lg-12 col-sm-12 plustop">
+                                <div class="row">
+                                    <div class="col-lg-1 col-sm-1 plusbottom">报告编号：</div>
+                                    <div class="col-lg-11 col-sm-11 plusbottom"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-3 col-sm-3 plusbottom">
+                                        <span>报告名称：</span>
+                                        <span></span>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-3 plusbottom">
+                                        <span>样品名称：</span>
+                                        <span></span>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-3 plusbottom">
+                                        <span>检验机构：</span>
+                                        <span></span>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-3 plusbottom">
+                                        <span>科室：</span>
+                                        <span></span>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-3 plusbottom">
+                                        <span>样本采集时间：</span>
+                                        <span></span>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-3 plusbottom">
+                                        <span>接受时间：</span>
+                                        <span></span>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-3 plusbottom">
+                                        <span>报告时间：</span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-3 col-sm-3 plusbottom">
+                                        <span>检验医师：</span>
+                                        <span></span>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-3 plusbottom">
+                                        <span>复核医师：</span>
+                                        <span></span>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-3 plusbottom">
+                                        <span>备注：</span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6 col-sm-6">
+                                        <div class="row">
+                                            <div class="col-lg-3 col-sm-3">项目</div>
+                                            <div class="col-lg-4 col-sm-4">结果</div>
+                                            <div class="col-lg-5 col-sm-5">参考值</div>
+                                        </div>
+                                        <div class="row shizixianzuo"></div>
+                                    </div>
+                                    <div class="col-lg-6 col-sm-6">
+                                        <div class="row">
+                                            <div class="col-lg-3 col-sm-3">项目</div>
+                                            <div class="col-lg-4 col-sm-4">结果</div>
+                                            <div class="col-lg-5 col-sm-5">参考值</div>
+                                        </div>
+                                        <div class="row shizixianyou"></div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6 col-sm-6 rightline ">
+                                        <div class="row">
+                                            <div class="col-lg-3 col-sm-3">测试1</div>
+                                            <div class="col-lg-2 col-sm-2">6.02</div>
+                                            <div class="col-lg-2 col-sm-2">↑</div>
+                                            <div class="col-lg-5 col-sm-5">3.5~9.5 *10^9L</div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-3 col-sm-3">测试1</div>
+                                            <div class="col-lg-2 col-sm-2">6.02</div>
+                                            <div class="col-lg-2 col-sm-2">↑</div>
+                                            <div class="col-lg-5 col-sm-5">3.5~9.5 *10^9L</div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-3 col-sm-3">测试1</div>
+                                            <div class="col-lg-2 col-sm-2">6.02</div>
+                                            <div class="col-lg-2 col-sm-2">↑</div>
+                                            <div class="col-lg-5 col-sm-5">3.5~9.5 *10^9L</div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-3 col-sm-3">测试1</div>
+                                            <div class="col-lg-2 col-sm-2">6.02</div>
+                                            <div class="col-lg-2 col-sm-2">↑</div>
+                                            <div class="col-lg-5 col-sm-5">3.5~9.5 *10^9L</div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-3 col-sm-3">测试1</div>
+                                            <div class="col-lg-2 col-sm-2">6.02</div>
+                                            <div class="col-lg-2 col-sm-2">↑</div>
+                                            <div class="col-lg-5 col-sm-5">3.5~9.5 *10^9L</div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-3 col-sm-3">测试1</div>
+                                            <div class="col-lg-2 col-sm-2">6.02</div>
+                                            <div class="col-lg-2 col-sm-2">↑</div>
+                                            <div class="col-lg-5 col-sm-5">3.5~9.5 *10^9L</div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-3 col-sm-3">测试1</div>
+                                            <div class="col-lg-2 col-sm-2">6.02</div>
+                                            <div class="col-lg-2 col-sm-2">↑</div>
+                                            <div class="col-lg-5 col-sm-5">3.5~9.5 *10^9L</div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-3 col-sm-3">测试1</div>
+                                            <div class="col-lg-2 col-sm-2">6.02</div>
+                                            <div class="col-lg-2 col-sm-2">↑</div>
+                                            <div class="col-lg-5 col-sm-5">3.5~9.5 *10^9L</div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-3 col-sm-3">测试1</div>
+                                            <div class="col-lg-2 col-sm-2">6.02</div>
+                                            <div class="col-lg-2 col-sm-2">↑</div>
+                                            <div class="col-lg-5 col-sm-5">3.5~9.5 *10^9L</div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-3 col-sm-3">测试1</div>
+                                            <div class="col-lg-2 col-sm-2">6.02</div>
+                                            <div class="col-lg-2 col-sm-2">↑</div>
+                                            <div class="col-lg-5 col-sm-5">3.5~9.5 *10^9L</div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-3 col-sm-3">测试1</div>
+                                            <div class="col-lg-2 col-sm-2">6.02</div>
+                                            <div class="col-lg-2 col-sm-2">↑</div>
+                                            <div class="col-lg-5 col-sm-5">3.5~9.5 *10^9L</div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-3 col-sm-3">测试1</div>
+                                            <div class="col-lg-2 col-sm-2">6.02</div>
+                                            <div class="col-lg-2 col-sm-2">↑</div>
+                                            <div class="col-lg-5 col-sm-5">3.5~9.5 *10^9L</div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-3 col-sm-3">测试1</div>
+                                            <div class="col-lg-2 col-sm-2">6.02</div>
+                                            <div class="col-lg-2 col-sm-2">↑</div>
+                                            <div class="col-lg-5 col-sm-5">3.5~9.5 *10^9L</div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-3 col-sm-3">测试1</div>
+                                            <div class="col-lg-2 col-sm-2">6.02</div>
+                                            <div class="col-lg-2 col-sm-2">↑</div>
+                                            <div class="col-lg-5 col-sm-5">3.5~9.5 *10^9L</div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-3 col-sm-3">测试1</div>
+                                            <div class="col-lg-2 col-sm-2">6.02</div>
+                                            <div class="col-lg-2 col-sm-2">↑</div>
+                                            <div class="col-lg-5 col-sm-5">3.5~9.5 *10^9L</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-sm-6">
+                                        <div class="row">
+                                            <div class="col-lg-3 col-sm-3">测试1</div>
+                                            <div class="col-lg-2 col-sm-2">6.02</div>
+                                            <div class="col-lg-2 col-sm-2">↑</div>
+                                            <div class="col-lg-5 col-sm-5">3.5~9.5 *10^9L</div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-3 col-sm-3">测试1</div>
+                                            <div class="col-lg-2 col-sm-2">6.02</div>
+                                            <div class="col-lg-2 col-sm-2">↑</div>
+                                            <div class="col-lg-5 col-sm-5">3.5~9.5 *10^9L</div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-3 col-sm-3">测试1</div>
+                                            <div class="col-lg-2 col-sm-2">6.02</div>
+                                            <div class="col-lg-2 col-sm-2">↑</div>
+                                            <div class="col-lg-5 col-sm-5">3.5~9.5 *10^9L</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row bottomline"></div>
+                            </div>
                         </div>
                         <div class="tab-pane fade" id="check">
-                            <p>Enterprise Java Beans（EJB）是一个创建高度可扩展性和强大企业级应用程序的开发架构，部署在兼容应用程序服务器（比如 JBOSS、Web Logic 等）的
-                                J2EE
-                                上。
-                            </p>
+                            <div class="col-lg-12 col-sm-12 plustop">
+                                <div class="row">
+                                    <div class="col-lg-1 col-sm-1 plusbottom">报告编号：</div>
+                                    <div class="col-lg-11 col-sm-11 plusbottom" id="baogaobianhao"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-3 col-sm-3 plusbottom">
+                                        <span>项目名称：</span>
+                                        <span></span>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-3 plusbottom">
+                                        <span>检查方法：</span>
+                                        <span></span>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-3 plusbottom">
+                                        <span>检验机构：</span>
+                                        <span></span>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-3 plusbottom">
+                                        <span>科室：</span>
+                                        <span></span>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-3 plusbottom">
+                                        <span>检查时间：</span>
+                                        <span></span>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-3 plusbottom">
+                                        <span>检查医师：</span>
+                                        <span></span>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-3 plusbottom">
+                                        <span>报告时间：</span>
+                                        <span></span>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-3 plusbottom">
+                                        <span>报告医师：</span>
+                                        <span></span>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-3 plusbottom">
+                                        <span>检验医师：</span>
+                                        <span></span>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-3 plusbottom">
+                                        <span>复核医师：</span>
+                                        <span></span>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-3 plusbottom">
+                                        <span>备注：</span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-4 col-sm-4 col-lg-offset-4 col-sm-offest-4">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-sm-6">
+                                                <img class="img-thumbnail" src="../img/u1133.png" alt="">
+                                            </div>
+                                            <div class="col-lg-6 col-sm-6">
+                                                <img class="img-thumbnail" src="../img/u1133.png" alt="">
+                                            </div>
+                                            <div class="col-lg-6 col-sm-6">
+                                                <img class="img-thumbnail" src="../img/u1133.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-2 col-sm-2 plusbottom">检查结果所见：</div>
+                                    <div class="col-lg-10 col-sm-10 plusbottom"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-2 col-sm-2 plusbottom">检查结果建议：</div>
+                                    <div class="col-lg-10 col-sm-10 plusbottom"></div>
+                                </div>
+                            </div>
                         </div>
                         <div class="tab-pane fade" id="healthlist">
-                            <p>Enterprise Java Beans（EJB）是一个创建高度可扩展性和强大企业级应用程序的开发架构，部署在兼容应用程序服务器（比如 JBOSS、Web Logic 等）的
-                                J2EE
-                                上。
-                            </p>
+                            <div class="col-lg-12 col-sm-12 plustop">
+
+                            </div>
                         </div>
                     </div>
                 </div>
