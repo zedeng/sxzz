@@ -6,7 +6,6 @@ $(document).ready(function () {
     function refresPage() {
         $recepttable.empty();
         $.getJSON("./mockJson.json", function (data) {
-            // console.log(data);
             data && data.list.forEach(function (item, index) {
                 var $tdindex = $('<td>').html(index + 1);
                 var $tdname = $('<td>').html(item.name);
