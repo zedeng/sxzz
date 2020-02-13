@@ -1,0 +1,16 @@
+{
+    "data":  {
+        "id": 17,
+        "name": "张三",
+        "sex": "女",
+        "idnum": 32102319875241,
+        "outHospital": "苏州大学附属第二医院",
+        "department": "内科",
+        "doctor": "王医生",
+        "birthday": "2019-12-21 09:09",
+        "staddressatus": "北京",
+        "tel":13555555555,
+        "settlement":"医保",
+        "insurancenum":32102319875241
+    }
+}
