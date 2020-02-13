@@ -9,7 +9,7 @@ $(document).ready(function () {
     function refresPage() {
         $schedulTable.empty();
         $sourcTable.empty();
-        $.getJSON("./mockJson.json", function (data) {
+        $.getJSON("../mockJson.json", function (data) {
             var schedulTableItem = '';
             var schedulTableItems = '';
             var sourcTableItem = '';

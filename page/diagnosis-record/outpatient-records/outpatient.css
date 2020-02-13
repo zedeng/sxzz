@@ -1,0 +1,44 @@
+.clearleftright {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: left !important;
+}
+
+.blackborder {
+    border: 1px solid black;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.shizixianzuo {
+    height: 16px;
+    border-bottom: 1px solid;
+    border-right: 1px solid;
+    margin-top: -10px;
+    margin-left: 0px;
+}
+
+.shizixianyou {
+    height: 16px;
+    border-bottom: 1px solid;
+    margin-top: -10px;
+}
+
+.rightline {
+    border-right: 1px solid;
+    padding-top: 5px;
+}
+
+.bottomline {
+    height: 2px;
+    margin-left: 0px;
+    border-bottom: 1px solid;
+}
+
+.plusbottom {
+    margin-bottom: 15px;
+}
+
+.plustop {
+    margin-top: 20px;
+}
