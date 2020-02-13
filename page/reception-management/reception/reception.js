@@ -17,7 +17,7 @@ $(document).ready(function () {
                 var $tdtime = $('<td>').html(item.time);
                 var $tdstatus = $('<td>').html(item.status);
                 var $tdctrl = $('<td>');
-                var detailBtn = "<button style='margin: 0 5px' data-id='" + item.id + "' class='btn btn-primary btn-xs recept-detail'><a href='./referralApplication.html' target='mainFrame'>详情</a></button>";
+                var detailBtn = "<button style='margin: 0 5px' data-id='" + item.id + "' class='btn btn-primary btn-xs recept-detail'><a href='../referralApplication/referralApplication.html' target='mainFrame'>详情</a></button>";
                 var acceptBtn = "<button style='margin: 0 5px' data-id='" + item.id + "' class='btn btn-danger btn-xs recept-accept'>接诊</button>";
                 $tdctrl.append(detailBtn, acceptBtn);
                 var $tRow = $('<tr>');
