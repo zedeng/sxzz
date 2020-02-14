@@ -1,0 +1,146 @@
+<!-- 下转诊申请单 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+    <link href="http://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../css/common.css">
+    <link rel="stylesheet" href="./referralApplication.css">
+    <title>转诊申请单(下转)</title>
+</head>
+
+<body id="refer-application-form">
+    <div class="form-wrap">
+        <div class="application-title">
+            <h4>转诊申请单(下转)</h4>
+        </div>
+        <div class="application-basic-info">
+            <div class="lebal module-name">患者基本信息</div>
+            <div class="row" style="margin-top: 5px;margin-left: 10px;">
+                <div class="col-md-4">
+                    <label class="label-desc">姓名：</label>
+                    <span class="r-patien-name">张三</span>
+                </div>
+                <div class="col-md-4">
+                    <label class="label-desc">性别：</label>
+                    <span class="r-patien-sex">男</span>
+                </div>
+                <div class="col-md-4">
+                    <label class="label-desc">身份证号码：</label>
+                    <span class="r-patien-idNum">321023199155621058</span>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 5px;margin-left: 10px;">
+                <div class="col-md-4">
+                    <label class="label-desc">出生日期：</label>
+                    <span class="r-patien-name">19810303</span>
+                </div>
+                <div class="col-md-4">
+                    <label class="label-desc">联系电话：</label>
+                    <span class="r-patien-sex">13001684409</span>
+                </div>
+                <div class="col-md-4">
+                    <label class="label-desc">家庭住址：</label>
+                    <span class="r-patien-idNum">苏州市姑苏区XXXX巅峰盛典</span>
+                </div>
+            </div>
+        </div>
+        <div class="application-recept-info">
+            <div class="lebal module-name">转诊信息</div>
+            <div class="row row-style">
+                <div class="col-md-4">
+                    <label class="label-desc"><b class="red-start">*</b>转出医院：</label>
+                    <span class="r-patien-idNum">苏州市姑苏区XXXX巅峰盛典</span>
+                </div>
+                <div class="col-md-2">
+                    <label class="label-desc"><b class="red-start">*</b>转出科室：</label>
+                    <span class="r-patien-idNum">内科</span>
+                </div>
+                <div class="col-md-2">
+                    <label class="label-desc">转诊医生：</label>
+                    <span class="r-patien-idNum">王医生</span>
+                </div>
+                <div class="col-md-4">
+                    <label class="label-desc"><b class="red-start">*</b>转诊日期：</label>
+                    <span class="r-patien-idNum">2019/12/12 09:00</span>
+                </div>
+            </div>
+            <div class="row row-style">
+                <div class="col-md-3">
+                    <label class="label-desc"><b class="red-start">*</b>转诊类型：</label>
+                    <span class="r-patien-idNum">门诊</span>
+                </div>
+                <div class="col-md-3">
+                    <label class="label-desc">性质：</label>
+                    <span class="r-patien-idNum">市名卡</span>
+                </div>
+                <div class="col-md-6">
+                    <label class="label-desc"><b class="red-start">*</b>诊断：</label>
+                    <span class="r-patien-idNum">(k.109)肺炎；（k.101）上呼吸道感染</span>
+                </div>
+            </div>
+            <div class="row row-style">
+                <div class="col-md-12">
+                    <label class="label-desc"><b class="red-start">*</b>病情描述：</label>
+                    <textarea class="form-control input-style" rows="2" style="width: 900px; resize: none;"></textarea>
+                </div>
+            </div>
+            <div class="row row-style">
+                <div class="col-md-12">
+                    <label class="label-desc"><b class="red-start">*</b>转诊原因：</label>
+                    <input type="text" class="form-control input-style" style="width: 900px">
+                </div>
+            </div>
+            <div class="row row-style">
+                <div class="col-md-12">
+                    <label class="label-desc"><b class="red-start">*</b>转入方式：</label>
+                    <label class="radio-inline">
+                        <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 患者自理
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 转诊单位护送
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> 120护送
+                    </label>
+                </div>
+            </div>
+            <div class="application-action-btn">
+                <button class="btn btn-default">打印</button>
+                <button class="btn btn-default">提交</button>
+                <button class="btn btn-default" data-toggle="modal" data-target="#myModal">驳回</button>
+            </div>
+        </div>
+
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">转诊驳回</h4>
+                    </div>
+                    <div class="modal-body">
+                        <label class="label-desc"><b class="red-start">*</b>病情描述：</label>
+                        <textarea class="form-control input-style" rows="4"
+                            style="width: 464px; resize: none;"></textarea>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary">确定</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="https://cdn.bootcss.com/jquery/1.9.1/jquery.min.js"></script>
+        <script src="http://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="./referralApplication.js"></script>
+</body>
+
+</html>

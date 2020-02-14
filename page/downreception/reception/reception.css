@@ -1,0 +1,38 @@
+.clearleftright {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: left !important;
+}
+
+.topword {
+    padding-right: 15px;
+    width: auto;
+}
+
+.input-style {
+    display: inline-block;
+}
+
+.label-style {
+    display: inline-block;
+    width: 80px;
+    text-align: right;
+}
+
+.div-wrap {
+    margin-top: 30px;
+}
+
+.action {
+    margin: 0 6px;
+    cursor: pointer;
+    color: crimson;
+}
+
+.recept-pagination {
+    text-align: center;
+}
+
+.pagination-style {
+    margin: 0 0;
+}

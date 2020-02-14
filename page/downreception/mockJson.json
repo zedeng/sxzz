@@ -1,0 +1,193 @@
+{
+    "list": [
+        {
+            "id": 17,
+            "name": "张三",
+            "sex": "女",
+            "idNumber": 32102319875241,
+            "outHospital": "苏州大学附属第二医院",
+            "department": "内科",
+            "doctor": "王医生",
+            "time": "2019-12-21 09:09",
+            "status": "已接诊"
+        },
+        {
+            "id": 2,
+            "name": "张三",
+            "sex": "女",
+            "idNumber": 32102319875241,
+            "outHospital": "苏州大学附属第二医院",
+            "department": "内科",
+            "doctor": "王医生",
+            "time": "2019-12-21 09:09",
+            "status": "已接诊"
+        },
+        {
+            "id": 3,
+            "name": "张三",
+            "sex": "女",
+            "idNumber": 32102319875241,
+            "outHospital": "苏州大学附属第二医院",
+            "department": "内科",
+            "doctor": "王医生",
+            "time": "2019-12-21 09:09",
+            "status": "未接诊"
+        },
+        {
+            "id": 4,
+            "name": "张三",
+            "sex": "男",
+            "idNumber": 32102319875241,
+            "outHospital": "苏州大学附属第二医院",
+            "department": "内科",
+            "doctor": "王医生",
+            "time": "2019-12-21 09:09",
+            "status": "已接诊"
+        },
+        {
+            "id": 5,
+            "name": "张三",
+            "sex": "男",
+            "idNumber": 32102319875241,
+            "outHospital": "苏州大学附属第二医院",
+            "department": "内科",
+            "doctor": "王医生",
+            "time": "2019-12-21 09:09",
+            "status": "驳回"
+        },
+        {
+            "id": 6,
+            "name": "张三",
+            "sex": "男",
+            "idNumber": 32102319875241,
+            "outHospital": "苏州大学附属第二医院",
+            "department": "内科",
+            "doctor": "王医生",
+            "time": "2019-12-21 09:09",
+            "status": "已接诊"
+        },
+        {
+            "id": 7,
+            "name": "张三",
+            "sex": "男",
+            "idNumber": 32102319875241,
+            "outHospital": "苏州大学附属第二医院",
+            "department": "内科",
+            "doctor": "王医生",
+            "time": "2019-12-21 09:09",
+            "status": "已接诊"
+        },
+        {
+            "id": 8,
+            "name": "张三",
+            "sex": "男",
+            "idNumber": 32102319875241,
+            "outHospital": "苏州大学附属第二医院",
+            "department": "内科",
+            "doctor": "王医生",
+            "time": "2019-12-21 09:09",
+            "status": "已接诊"
+        },
+        {
+            "id": 9,
+            "name": "张三",
+            "sex": "男",
+            "idNumber": 32102319875241,
+            "outHospital": "苏州大学附属第二医院",
+            "department": "内科",
+            "doctor": "王医生",
+            "time": "2019-12-21 09:09",
+            "status": "已接诊"
+        },
+        {
+            "id": 10,
+            "name": "张三",
+            "sex": "男",
+            "idNumber": 32102319875241,
+            "outHospital": "苏州大学附属第二医院",
+            "department": "内科",
+            "doctor": "王医生",
+            "time": "2019-12-21 09:09",
+            "status": "已接诊"
+        }
+    ],
+    "table1": [
+        {
+            "doctorId": 22,
+            "doctorName": "王医生",
+            "date": "2020-2-12",
+            "noon": "上午",
+            "status": "正常",
+            "cost": "20.00"
+        },
+        {
+            "doctorId": 17,
+            "doctorName": "王医生",
+            "date": "2020-2-12",
+            "noon": "上午",
+            "status": "正常",
+            "cost": "20.00"
+        },
+        {
+            "doctorId": 19,
+            "doctorName": "王医生",
+            "date": "2020-2-12",
+            "noon": "下午",
+            "status": "正常",
+            "cost": "20.00"
+        },
+        {
+            "doctorId": 21,
+            "doctorName": "王医生",
+            "date": "2020-2-12",
+            "noon": "下午",
+            "status": "正常",
+            "cost": "20.00"
+        },
+        {
+            "doctorId": 23,
+            "doctorName": "王医生",
+            "date": "2020-2-12",
+            "noon": "下午",
+            "status": "正常",
+            "cost": "20.00"
+        }
+    ],
+    "table2": [
+        {
+            "stime": "09:00",
+            "etime": "09:30",
+            "surplus": 3,
+            "total": 8,
+            "visited": 5
+        },
+        {
+            "stime": "09:30",
+            "etime": "10:00",
+            "surplus": 3,
+            "total": 8,
+            "visited": 5
+        },
+        {
+            "stime": "10:00",
+            "etime": "10:30",
+            "surplus": 3,
+            "total": 8,
+            "visited": 5
+        },
+        {
+            "stime": "13:00",
+            "etime": "13:30",
+            "surplus": 3,
+            "total": 4,
+            "visited": 1
+        },
+        {
+            "stime": "15:00",
+            "etime": "15:30",
+            "surplus": 8,
+            "total": 8,
+            "visited": 0
+        }
+    ]
+}
