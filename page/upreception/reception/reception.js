@@ -17,9 +17,14 @@ $(document).ready(function () {
                 var $tdtime = $('<td>').html(item.time);
                 var $tdstatus = $('<td>').html(item.status);
                 var $tdctrl = $('<td>');
-                var detailBtn = "<button style='margin: 0 5px' data-id='" + item.id + "' class='btn btn-primary btn-xs recept-detail'><a href='../referralApplication/referralApplication.html' target='mainFrame'>详情</a></button>";
-                var acceptBtn = "<button style='margin: 0 5px' data-id='" + item.id + "' class='btn btn-danger btn-xs recept-accept'>接诊</button>";
-                $tdctrl.append(detailBtn, acceptBtn);
+                var acceptBtn = "<button style='margin: 0 5px' data-id='" + item.id + "' class='btn btn-danger btn-xs recept-accept'><a href='../referralApplication/referralApplication.html' target='mainFrame'>接诊</a></button>";
+                if (item.ifInHospital) {
+                    var detailBtn = "<button style='margin: 0 5px' data-id='" + item.id + "' class='btn btn-primary btn-xs recept-detail'><a href='../../diagnosisRecord/hospitalizationRecords/hospitalization.html'>详情</a></button>";
+                    $tdctrl.append(detailBtn, acceptBtn);
+                } else {
+                    var detailBtnOut = "<button style='margin: 0 5px' data-id='" + item.id + "' class='btn btn-primary btn-xs recept-detail'><a href='../../diagnosisRecord/outpatientRecords/outpatient.html'>详情</a></button>";
+                    $tdctrl.append(detailBtnOut, acceptBtn);
+                };
                 var $tRow = $('<tr>');
                 $tRow.append($tdindex, $tdname, $tdsex, $tdidNumber, $tdoutHospital, $tdoutHospital, $tddepartment, $tddoctor, $tdtime, $tdstatus, $tdctrl);
                 $recepttable.append($tRow);

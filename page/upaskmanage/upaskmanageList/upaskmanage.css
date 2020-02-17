@@ -12,3 +12,15 @@
     padding-right: 15px;
     width: auto;
 }
+
+.click-btn {
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+a {
+    font-size: 14px;
+    text-decoration: underline !important;
+    color: red !important;
+}

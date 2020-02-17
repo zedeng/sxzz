@@ -1,15 +1,21 @@
 $(document).ready(function () {
-    var $iframeHight = $(document).height() + 10;
+    var $iframeHight = $(document).height() + 20;
     $('#refer-application-form').css('height', $iframeHight);
 
     var $schedulTable = $('#doctor-schedul-table tbody');
     var $sourcTable = $('#doctor-source-table tbody');
     refresPage();
 
+    $('#mydatepicker').dcalendarpicker({
+        format: 'yyyy-mm-dd'
+    });
+    $('#mycalendar').dcalendar(); //初始化日历     
+
+
     function refresPage() {
         $schedulTable.empty();
         $sourcTable.empty();
-        $.getJSON("../mockJson.json", function (data) {
+        $.getJSON("../../upreception/mockJson.json", function (data) {
             var schedulTableItem = '';
             var schedulTableItems = '';
             var sourcTableItem = '';
@@ -34,6 +40,6 @@ $(document).ready(function () {
 });
 
 $(window).resize(function () {
-    var $iframeHight = $(window).height() + 30;
+    var $iframeHight = $(window).height() + 90;
     $('#refer-application-form').css('height', $iframeHight)
 });

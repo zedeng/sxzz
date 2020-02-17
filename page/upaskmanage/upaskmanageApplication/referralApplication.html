@@ -1,0 +1,190 @@
+<!-- 转诊申请单 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+    <link href="http://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../css/common.css">
+    <link rel="stylesheet" href="./referralApplication.css">
+    <link rel="stylesheet" href="../../../Plugins/datePicker/css/dcalendar.picker.css" />
+    <!-- <script type="text/javascript" src="../../../Plugins/datePicker/js/jquery-1.11.0.min.js"></script> -->
+
+
+    <title>转诊申请单</title>
+</head>
+
+<body id="refer-application-form">
+    <div class="form-wrap">
+        <div class="application-title">
+            <h4>转诊申请单</h4>
+        </div>
+        <div class="application-basic-info">
+            <div class="lebal module-name">患者基本信息</div>
+            <div class="row" style="margin-top: 5px;margin-left: 10px;">
+                <div class="col-md-4">
+                    <label class="label-desc">姓名：</label>
+                    <span class="r-patien-name">张三</span>
+                </div>
+                <div class="col-md-4">
+                    <label class="label-desc">性别：</label>
+                    <span class="r-patien-sex">男</span>
+                </div>
+                <div class="col-md-4">
+                    <label class="label-desc">身份证号码：</label>
+                    <span class="r-patien-idNum">321023199155621058</span>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 5px;margin-left: 10px;">
+                <div class="col-md-4">
+                    <label class="label-desc">出生日期：</label>
+                    <span class="r-patien-name">19810303</span>
+                </div>
+                <div class="col-md-4">
+                    <label class="label-desc">联系电话：</label>
+                    <span class="r-patien-sex">13001684409</span>
+                </div>
+                <div class="col-md-4">
+                    <label class="label-desc">家庭住址：</label>
+                    <span class="r-patien-idNum">苏州市姑苏区XXXX巅峰盛典</span>
+                </div>
+            </div>
+        </div>
+        <div class="application-recept-info">
+            <div class="lebal module-name">转诊信息</div>
+            <div class="row row-style">
+                <div class="col-md-5">
+                    <label class="label-style"><b class="red-start">*</b>转入医院：</label>
+                    <select id="hospitals" class="form-control input-style" style="width: 280px">
+                        <option value="1">苏州市第二人民医院</option>
+                        <option value="2">苏州大学附属第一人民医院</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <label class="label-style"><b class="red-start">*</b>转诊科室：</label>
+                    <select id="depts" class="form-control input-style" style="width: 120px">
+                        <option value="1">内科</option>
+                        <option value="2">外科</option>
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <label class="label-style"><b class="red-start">*</b>转诊医生：</label>
+                    <select id="doctors" class="form-control input-style" style="width: 120px">
+                        <option value="1">王医生</option>
+                        <option value="2">张医生</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row row-style">
+                <div class="col-md-4">
+                    <label class="label-style"><b class="red-start">*</b>转诊类型：</label>
+                    <select id="payMethords" class="form-control input-style" style="width: 120px">
+                        <option value="1">门诊</option>
+                        <option value="2">住院</option>
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <label class="label-style">性质：</label>
+                    <select id="payMethords" class="form-control input-style" style="width: 120px">
+                        <option value="1">医保</option>
+                        <option value="2">自费</option>
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <label class="label-desc"><b class="red-start">*</b>转出日期：</label>
+                    <input id='mydatepicker' type='text' class="form-control" style="width: 172px" />
+                </div>
+
+            </div>
+            <div class=" row row-style">
+                <div class="col-md-12">
+                    <label class="label-desc"><b class="red-start">*</b>诊断：</label>
+                    <input type="text" class="form-control input-style" style="width: 900px">
+                </div>
+            </div>
+            <div class="row row-style">
+                <div class="col-md-12">
+                    <label class="label-desc"><b class="red-start">*</b>病情描述：</label>
+                    <textarea class="form-control input-style" rows="2" style="width: 900px; resize: none;"></textarea>
+                </div>
+            </div>
+            <div class="row row-style">
+                <div class="col-md-12">
+                    <label class="label-desc"><b class="red-start">*</b>转诊原因：</label>
+                    <input type="text" class="form-control input-style" style="width: 900px">
+                </div>
+            </div>
+            <div class="row row-style">
+                <div class="col-md-12">
+                    <label class="label-desc"><b class="red-start">*</b>转入方式：</label>
+                    <label class="radio-inline">
+                        <input type="radio" name="sendMethords" id="inlineRadio1" value="option1"> 患者自理
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="sendMethords" id="inlineRadio2" value="option2"> 转诊单位护送
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="sendMethords" id="inlineRadio3" value="option3"> 120护送
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="application-doctor-info">
+            <div class="doctor-schedul">
+                <h5>医生排班信息</h5>
+                <div class="doctor-schedul-table">
+                    <table class="table table-bordered table-style" id="doctor-schedul-table">
+                        <thead>
+                            <tr>
+                                <th style="width:10%;">序号</th>
+                                <th style="width:20%;">医生姓名</th>
+                                <th style="width: 30%;">排班日期</th>
+                                <th style="width: 10%;">午别</th>
+                                <th style="width: 10%;">状态</th>
+                                <th style="width: 20%;">专家费</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="doctor-source">
+                <h5>号源信息</h5>
+                <div class="doctor-source-table">
+                    <table class="table table-bordered table-style" id="doctor-source-table">
+                        <thead>
+                            <tr>
+                                <th style="width:10%;">序号</th>
+                                <th style="width: 20%;">起始时间</th>
+                                <th style="width: 20%;">结束时间</th>
+                                <th style="width: 20%;">剩余号源</th>
+                                <th style="width: 15%;">号源总数</th>
+                                <th style="width: 15%;">就诊人数</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="application-action-btn">
+            <button class="btn btn-success">提交</button>
+            <button class="btn btn-danger"><a href="../upaskmanageList/upaskmanage.html">取消</a></button>
+        </div>
+    </div>
+
+    <script src="https://cdn.bootcss.com/jquery/1.9.1/jquery.min.js"></script>
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../../Plugins/datePicker/js/dcalendar.picker.js"></script>
+    <script src="./referralApplication.js"></script>
+</body>
+
+</html>
