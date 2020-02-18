@@ -24,3 +24,25 @@ a {
     text-decoration: underline !important;
     color: red !important;
 }
+
+.table-style thead tr th {
+    font-size: 14px;
+}
+
+.table-style tbody tr td {
+    font-size: 14px;
+}
+
+.input-style {
+    display: inline-block;
+}
+
+.label-style {
+    display: inline-block;
+    width: 80px;
+    text-align: right;
+}
+
+.div-wrap {
+    margin-top: 30px;
+}

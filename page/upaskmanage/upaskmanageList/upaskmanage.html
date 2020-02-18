@@ -3,84 +3,71 @@
 <html>
 
 <head>
-    <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
-        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
-        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
-    </script>
-    <link rel="stylesheet" href="./upaskmanage.css">
-    <link rel="stylesheet" href="../../../css/common.css">
-</head>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+        <link href="http://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../../css/common.css">
+        <link rel="stylesheet" href="./upaskmanage.css">
+        <link rel="stylesheet" href="../../../Plugins/datePicker/css/dcalendar.picker.css" />
+    </head>
 
 <body>
     <div class="bodypart" id="upaskmanageList">
         <div class="container-fluid">
             <form class="form-horizontal">
-                <div class="row form-group">
+                <div class="row form-group ">
                     <div class="col-lg-3 col-sm-3">
-                        <span
-                            class="col-lg-4 col-sm-4 control-label clearleftright topword">姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名</span>
-                        <div class="col-lg-8 col-sm-8 clearleftright">
-                            <input type="text" id="name" class="form-control">
-                        </div>
+                        <label class="label-style">姓名：</label>
+                        <input type="text" id="patienName" class="form-control input-style" style="width: 167px">
                     </div>
                     <div class="col-lg-3 col-sm-3 clearleftright">
-                        <span class="col-lg-4 col-sm-4 control-label clearleftright topword">身份证号</span>
-                        <div class="col-lg-8 col-sm-8 clearleftright">
-                            <input type="text" id="idnum" class="form-control">
-                        </div>
+                        <label class="label-style">身份证：</label>
+                        <input type="text" id="idNum" class="form-control input-style" style="width: 180px">
                     </div>
                     <div class="col-lg-2 col-sm-2">
-                        <span
-                            class="col-lg-5 col-sm-5 control-label">性&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;别</span>
-                        <div class="col-lg-7 col-sm-7 clearleftright">
-                            <select id="sex" class="form-control">
-                                <option value="男">男</option>
-                                <option value="女">女</option>
-                            </select>
-                        </div>
+                        <label class="label-style">性别：</label>
+                        <select id="sex" class="form-control input-style" style="width: 70px">
+                            <option value="1">男</option>
+                            <option value="2">女</option>
+                        </select>
+
                     </div>
                     <div class="col-lg-4 col-sm-4">
                         <div class="row">
-                            <span class="col-lg-2 col-sm-2 control-label clearleftright">申请时间</span>
-                            <div class="col-lg-3 col-sm-3 clearleftright">
-                                <input type="text" id="stime" class="form-control">
-                            </div>
-                            <span class="col-lg-1 col-sm-1 control-label">至</span>
-                            <div class="col-lg-3 col-sm-3 clearleftright">
-                                <input type="text" id="etime" class="form-control">
-                            </div>
+                            <label class="label-style">申请时间：</label>
+                            <input type="text" id="stime" class="form-control input-style" style="width:110px">
+                            <span>至</span>
+                            <input type="text" id="etime" class="form-control input-style" style="width: 110px">
                         </div>
                     </div>
                 </div>
                 <div class="row form-group">
-                    <div class="col-lg-3 col-sm-3">
-                        <span class="col-lg-4 col-sm-4 control-label clearleftright topword">转入医院</span>
-                        <div class="col-lg-8 col-sm-8 clearleftright">
-                            <input type="text" id="inhospital" class="form-control">
-                        </div>
+                    <div class="col-lg-4 col-sm-4">
+                        <label class="label-style">转入医院：</label>
+                        <input type="text" id="inHospital" class="form-control input-style" style="width: 247px">
                     </div>
                     <div class="col-lg-3 col-sm-3 clearleftright">
-                        <span class="col-lg-4 col-sm-4 control-label clearleftright topword">转入科室</span>
-                        <div class="col-lg-8 col-sm-8 clearleftright">
-                            <input type="text" id="idnum" class="form-control">
-                        </div>
+                        <label class="label-style">转入科室：</label>
+                        <input type="text" id="dept" class="form-control input-style" style="width: 180px">
+                    </div>
+                    <div class="col-lg-3 col-sm-3">
+                        <label class="label-style">状态：</label>
+                        <select id="status" class="form-control input-style" style="width: 90px">
+                            <option value="0">未接诊</option>
+                            <option value="1">已接诊</option>
+                            <option value="2">驳回</option>
+                        </select>
                     </div>
                     <div class="col-lg-2 col-sm-2">
-                        <span
-                            class="col-lg-5 col-sm-5 control-label">状&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;态</span>
-                        <div class="col-lg-7 col-sm-7 clearleftright">
-                            <select id="status" class="form-control">
-                                <option value="未接诊">未接诊</option>
-                                <option value="已接诊">已接诊</option>
-                                <option value="驳回">驳回</option>
-                            </select>
+                        <div class="row">
+                            <span class="btn btn-primary btn-bg  search" style="margin-left: 10px;">查询</span>
+                            <span class="btn btn-primary btn-bg  reset" style="margin-left: 20px">重置</span>
                         </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-4 clearleftright">
-                        <button class="btn btn-primary btn-sm">查询</button>
-                        <button class="btn btn-primary btn-sm">重置</button>
                     </div>
                 </div>
             </form>
@@ -111,7 +98,7 @@
                                 <td> 2019-12-12 09:00:00 </td>
                                 <td>未接诊</td>
                                 <td>
-                                    <span class="click-btn"><a
+                                    <span class="click-btn" flag="0"><a
                                             href="../../diagnosisRecord/hospitalizationRecords/hospitalization.html"
                                             target="mainFrame">详情</a>
                                     </span>
@@ -166,9 +153,7 @@
                                 <td> 2019-12-12 09:00:00 </td>
                                 <td>驳回</td>
                                 <td>
-                                    <span class="click-btn"><a
-                                            href="../../diagnosisRecord/hospitalizationRecords/hospitalization.html"
-                                            target="mainFrame">详情</a>
+                                    <span class="click-btn"><a data-toggle="modal" data-target="#myModal">详情</a>
                                     </span>
                                 </td>
                             </tr>
@@ -187,20 +172,24 @@
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
                             aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="myModalLabel">驳回详情</h4>
+                    <h4 class="modal-title" id="myModalLabel">驳回原因</h4>
                 </div>
                 <div class="modal-body">
                     <label class="label-desc"><b class="red-start">*</b>病情描述：</label>
-                    <textarea class="form-control input-style" rows="4" style="width: 464px; resize: none;"></textarea>
+                    <textarea class="form-control input-style" rows="4" style="width: 566px; resize: none;"
+                        disabled></textarea>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-primary">确定</button>
-                    <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                    <!-- <button type="button" class="btn btn-primary">确定</button> -->
+                    <button type="button" class="btn btn-default" data-dismiss="modal">确定</button>
                 </div>
             </div>
         </div>
     </div>
-
+    <script src="https://cdn.bootcss.com/jquery/1.9.1/jquery.min.js"></script>
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../../Plugins/datePicker/js/dcalendar.picker.js"></script>
+    <script src="./upaskmanage.js"></script>
 </body>
 
 </html>

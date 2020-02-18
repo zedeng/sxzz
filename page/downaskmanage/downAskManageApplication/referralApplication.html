@@ -12,17 +12,18 @@
     <link rel="stylesheet" href="./referralApplication.css">
     <link rel="stylesheet" href="../../../Plugins/datePicker/css/dcalendar.picker.css" />
 
+
     <title>转诊申请单</title>
 </head>
 
 <body id="refer-application-form">
     <div class="form-wrap">
         <div class="application-title">
-            <h4>转诊申请单</h4>
+            <h4>转诊申请单(下转)</h4>
         </div>
         <div class="application-basic-info">
             <div class="lebal module-name">患者基本信息</div>
-            <div class="row" style="margin-top: 5px;margin-left: 10px;">
+            <div class="row" style="margin-top: 15px;margin-left: 10px;">
                 <div class="col-md-4">
                     <label class="label-desc">姓名：</label>
                     <span class="r-patien-name">张三</span>
@@ -36,7 +37,7 @@
                     <span class="r-patien-idNum">321023199155621058</span>
                 </div>
             </div>
-            <div class="row" style="margin-top: 5px;margin-left: 10px;">
+            <div class="row" style="margin-top: 15px;margin-left: 10px;">
                 <div class="col-md-4">
                     <label class="label-desc">出生日期：</label>
                     <span class="r-patien-name">19810303</span>
@@ -130,54 +131,23 @@
                     </label>
                 </div>
             </div>
-        </div>
-        <div class="application-doctor-info">
-            <div class="doctor-schedul">
-                <h5>医生排班信息</h5>
-                <div class="doctor-schedul-table">
-                    <table class="table table-bordered table-style" id="doctor-schedul-table">
-                        <thead>
-                            <tr>
-                                <th style="width:10%;">序号</th>
-                                <th style="width:20%;">医生姓名</th>
-                                <th style="width: 30%;">排班日期</th>
-                                <th style="width: 10%;">午别</th>
-                                <th style="width: 10%;">状态</th>
-                                <th style="width: 20%;">专家费</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr></tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-            <div class="doctor-source">
-                <h5>号源信息</h5>
-                <div class="doctor-source-table">
-                    <table class="table table-bordered table-style" id="doctor-source-table">
-                        <thead>
-                            <tr>
-                                <th style="width:10%;">序号</th>
-                                <th style="width: 20%;">起始时间</th>
-                                <th style="width: 20%;">结束时间</th>
-                                <th style="width: 20%;">剩余号源</th>
-                                <th style="width: 15%;">号源总数</th>
-                                <th style="width: 15%;">就诊人数</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr></tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
+            <div class="row row-style">
+                <div class="col-md-12">
+                    <label class="label-desc"><b class="red-start">*</b>回转：</label>
+                    <label class="radio-inline">
+                        <input type="radio" name="backSend" value="1"> 是
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="backSend" value="2"> 否
+                    </label>
 
+                </div>
+            </div>
+        </div>
         <div class="application-action-btn">
             <button class="btn btn-success submit-application-btn">提交</button>
             <button class="btn btn-default print-application">打印</button>
-            <button class="btn btn-danger"><a href="../upaskmanageList/upaskmanage.html">返回</a></button>
+            <button class="btn btn-danger"><a href="../downAskManageList/downaskmanage.html">返回</a></button>
         </div>
     </div>
 

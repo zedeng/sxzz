@@ -21,30 +21,16 @@
 
 .application-basic-info {
     margin-top: 10px;
-    height: 95px;
+    height: 125px;
     width: 100%;
     border: 1px solid #333;
 }
 
 .application-recept-info {
-    margin-top: 10px;
-    height: 285px;
+    margin-top: 30px;
+    height: 320px;
     width: 100%;
     border: 1px solid #333;
-}
-
-.application-doctor-info {
-    margin-top: 10px;
-    height: 150px;
-    width: 100%;
-    /* border: 1px solid #333; */
-}
-
-.application-form-info {
-    margin-top: 10px;
-    height: 25px;
-    width: 100%;
-
 }
 
 .application-action-btn {

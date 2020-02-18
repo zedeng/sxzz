@@ -21,24 +21,19 @@
 
 .application-basic-info {
     margin-top: 10px;
-    height: 95px;
+    height: 135px;
     width: 100%;
     border: 1px solid #333;
 }
 
 .application-recept-info {
-    margin-top: 10px;
-    height: 225px;
+    margin-top: 30px;
+    height: 245px;
     width: 100%;
     border: 1px solid #333;
 }
 
-.application-doctor-info {
-    margin-top: 10px;
-    height: 135px;
-    width: 100%;
-    /* border: 1px solid #333; */
-}
+
 
 .application-form-info {
     margin-top: 10px;
@@ -83,29 +78,5 @@
 .module-name {
     margin-left: 30px;
     height: 30px;
-    line-height: 30px;
-}
-
-.doctor-schedul,
-.doctor-source {
-    display: inline-block;
-    width: 49%;
-    height: 135px;
-    border: 1px solid #333;
-}
-
-
-.doctor-schedul h5,
-.doctor-source h5 {
-    padding-left: 30px;
-}
-
-.doctor-source {
-    margin-left: 1.5%;
-}
-
-.doctor-schedul-table,
-.doctor-source-table {
-    height: 91px;
-    overflow: auto;
+    line-height: 40px;
 }

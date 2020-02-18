@@ -9,7 +9,7 @@
             "department": "内科",
             "doctor": "王医生",
             "time": "2019-12-21 09:09",
-            "status": "已接诊",
+            "status": "1",
             "ifInHospital": false
         },
         {
@@ -21,7 +21,7 @@
             "department": "内科",
             "doctor": "王医生",
             "time": "2019-12-21 09:09",
-            "status": "已接诊",
+            "status": "1",
             "ifInHospital": true
         },
         {
@@ -33,7 +33,7 @@
             "department": "内科",
             "doctor": "王医生",
             "time": "2019-12-21 09:09",
-            "status": "未接诊",
+            "status": "0",
             "ifInHospital": true
         },
         {
@@ -45,7 +45,7 @@
             "department": "内科",
             "doctor": "王医生",
             "time": "2019-12-21 09:09",
-            "status": "已接诊",
+            "status": "1",
             "ifInHospital": true
         },
         {
@@ -57,7 +57,7 @@
             "department": "内科",
             "doctor": "王医生",
             "time": "2019-12-21 09:09",
-            "status": "驳回"
+            "status": "2"
         },
         {
             "id": 6,
@@ -68,7 +68,7 @@
             "department": "内科",
             "doctor": "王医生",
             "time": "2019-12-21 09:09",
-            "status": "已接诊"
+            "status": "1"
         },
         {
             "id": 7,
@@ -79,7 +79,7 @@
             "department": "内科",
             "doctor": "王医生",
             "time": "2019-12-21 09:09",
-            "status": "已接诊",
+            "status": "1",
             "ifInHospital": true
         },
         {
@@ -91,7 +91,7 @@
             "department": "内科",
             "doctor": "王医生",
             "time": "2019-12-21 09:09",
-            "status": "已接诊",
+            "status": "2",
             "ifInHospital": true
         },
         {
@@ -103,7 +103,7 @@
             "department": "内科",
             "doctor": "王医生",
             "time": "2019-12-21 09:09",
-            "status": "已接诊",
+            "status": "2",
             "ifInHospital": true
         },
         {
@@ -115,7 +115,7 @@
             "department": "内科",
             "doctor": "王医生",
             "time": "2019-12-21 09:09",
-            "status": "已接诊",
+            "status": "1",
             "ifInHospital": true
         }
     ],

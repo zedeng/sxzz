@@ -15,17 +15,87 @@ $(document).ready(function () {
                 var $tddepartment = $('<td>').html(item.department);
                 var $tddoctor = $('<td>').html(item.doctor);
                 var $tdtime = $('<td>').html(item.time);
-                var $tdstatus = $('<td>').html(item.status);
+
+                var statusDiscribe = item.status == 0 ? '未接诊' : item.status == 1 ? '已接诊' : '驳回';
+                var $tdstatus = $('<td>').html(statusDiscribe);
                 var $tdctrl = $('<td>');
-                var detailBtn = "<button style='margin: 0 5px' data-id='" + item.id + "' class='btn btn-primary btn-xs recept-detail'>详情</button>";
-                var acceptBtn = "<button style='margin: 0 5px' data-id='" + item.id + "' class='btn btn-danger btn-xs recept-accept'><a href='../referralApplication/referralApplication.html' target='mainFrame'>接诊</a></button>";
-                $tdctrl.append(detailBtn, acceptBtn);
+
+                if (item.status == 0) {
+                    var acceptBtn = "<button style='margin: 0 5px' data-id='" + item.id + "' class='btn btn-danger btn-xs recept-accept'><a href='../referralApplication/referralApplication.html' target='mainFrame'>接诊</a></button>";
+                    var detailBtn = "<button style='margin: 0 5px' data-id='" + item.id + "' class='btn btn-primary btn-xs recept-detail'><a href='../../diagnosisRecord/hospitalizationRecords/hospitalization.html'>详情</a></button>";
+                    $tdctrl.append(detailBtn, acceptBtn);
+                } else if (item.status == 1) {
+                    if (item.ifInHospital) {
+                        var detailBtn = "<button style='margin: 0 5px' data-id='" + item.id + "' class='btn btn-primary btn-xs recept-detail'><a href='../../diagnosisRecord/hospitalizationRecords/hospitalization.html'>详情</a></button>";
+                        $tdctrl.append(detailBtn);
+                    } else {
+                        var detailBtnOut = "<button style='margin: 0 5px' data-id='" + item.id + "' class='btn btn-primary btn-xs recept-detail'><a href='../../diagnosisRecord/outpatientRecords/outpatient.html'>详情</a></button>";
+                        $tdctrl.append(detailBtnOut);
+                    };
+                } else {
+                    var detailBtnReject = "<button style='margin: 0 5px' data-toggle='modal' data-target='#myModal'  data-id='" + item.id + "' class='btn btn-primary btn-xs recept-detail'>详情</button>";
+                    $tdctrl.append(detailBtnReject);
+                }
                 var $tRow = $('<tr>');
                 $tRow.append($tdindex, $tdname, $tdsex, $tdidNumber, $tdoutHospital, $tdoutHospital, $tddepartment, $tddoctor, $tdtime, $tdstatus, $tdctrl);
                 $recepttable.append($tRow);
             });
         });
     };
+
+    //定义查询条件
+    var queryItems = {
+        patienName: '',
+        idNum: '',
+        sex: '',
+        applictTime: {
+            stime: '',
+            etime: '',
+        },
+        receptTime: {
+            rstime: '',
+            retime: ''
+        },
+        outHospital: '',
+        status: '',
+    };
+
+
+
+
+    //点击查询按钮
+    $('.search').on('click', '', function () {
+        queryItems.patienName = $('#patienName').val();
+        queryItems.idNum = $('#idNum').val();
+        queryItems.sex = $('#sex option:selected').val();
+        queryItems.applictTime.stime = $('#stime').val();
+        queryItems.applictTime.etime = $('#etime').val();
+        queryItems.receptTime.rstime = $('#rstime').val();
+        queryItems.receptTime.retime = $('#retime').val();
+        queryItems.outHospital = $('#outHospital').val();
+        queryItems.status = $('#status option:selected').val();
+
+        console.log(queryItems);
+
+        //调查询接口
+
+    });
+
+
+    //点击重置按钮
+    $('.reset').on('click', '', function () {
+        $('#patienName').val('');
+        $('#idNum').val('');
+        $('#sex').val(1);
+        $('#stime').val('');
+        $('#etime').val('');
+        $('#rstime').val('');
+        $('#retime').val('');
+        $('#outHospital').val('');
+        $('#status').val(0);
+
+    });
+
 
     //点击跳转到转诊申请单
     $recepttable.on('click', '.recept-detail', function () {

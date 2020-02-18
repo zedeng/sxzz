@@ -6,6 +6,8 @@ $(document).ready(function () {
     var $sourcTable = $('#doctor-source-table tbody');
     refresPage();
 
+    var patientId = localStorage.getItem('patientId');
+
     function refresPage() {
         $schedulTable.empty();
         $sourcTable.empty();
@@ -31,6 +33,21 @@ $(document).ready(function () {
             $sourcTable.append(sourcTableItems);
         });
     };
+
+
+    //打印
+    $('.print').on('click', '', function () {
+        //调接口TODO...
+        console.log(patientId);
+    });
+
+    //接诊
+    $('.accept').on('click', '', function () {
+        //调接口TODO...
+        console.log(patientId);
+    });
+
+
 });
 
 $(window).resize(function () {

@@ -20,7 +20,7 @@
         </div>
         <div class="application-basic-info">
             <div class="lebal module-name">患者基本信息</div>
-            <div class="row" style="margin-top: 5px;margin-left: 10px;">
+            <div class="row" style="margin-top: 15px;margin-left: 10px;">
                 <div class="col-md-4">
                     <label class="label-desc">姓名：</label>
                     <span class="r-patien-name">张三</span>
@@ -34,7 +34,7 @@
                     <span class="r-patien-idNum">321023199155621058</span>
                 </div>
             </div>
-            <div class="row" style="margin-top: 5px;margin-left: 10px;">
+            <div class="row" style="margin-top: 15px;margin-left: 10px;">
                 <div class="col-md-4">
                     <label class="label-desc">出生日期：</label>
                     <span class="r-patien-name">19810303</span>
@@ -86,32 +86,33 @@
             <div class="row row-style">
                 <div class="col-md-12">
                     <label class="label-desc"><b class="red-start">*</b>病情描述：</label>
-                    <textarea class="form-control input-style" rows="2" style="width: 900px; resize: none;"></textarea>
+                    <textarea class="form-control input-style" rows="2" disabled
+                        style="width: 900px; resize: none;"></textarea>
                 </div>
             </div>
             <div class="row row-style">
                 <div class="col-md-12">
                     <label class="label-desc"><b class="red-start">*</b>转诊原因：</label>
-                    <input type="text" class="form-control input-style" style="width: 900px">
+                    <input type="text" class="form-control input-style" disabled style="width: 900px">
                 </div>
             </div>
             <div class="row row-style">
                 <div class="col-md-12">
                     <label class="label-desc"><b class="red-start">*</b>转入方式：</label>
                     <label class="radio-inline">
-                        <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 患者自理
+                        <input type="radio" name="inlineRadioOptions" disabled id="inlineRadio1" value="option1"> 患者自理
                     </label>
                     <label class="radio-inline">
-                        <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 转诊单位护送
+                        <input type="radio" name="inlineRadioOptions" disabled id="inlineRadio2" value="option2"> 转诊单位护送
                     </label>
                     <label class="radio-inline">
-                        <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> 120护送
+                        <input type="radio" name="inlineRadioOptions" disabled id="inlineRadio3" value="option3"> 120护送
                     </label>
                 </div>
             </div>
             <div class="application-action-btn">
                 <button class="btn btn-default">打印</button>
-                <button class="btn btn-default">提交</button>
+                <button class="btn btn-default">接诊</button>
                 <button class="btn btn-default" data-toggle="modal" data-target="#myModal">驳回</button>
             </div>
         </div>
