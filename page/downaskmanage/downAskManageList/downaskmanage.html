@@ -3,15 +3,18 @@
 <html>
 
 <head>
-    <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
-        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
-        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
-    </script>
-    <link rel="stylesheet" href="./downaskmanage.css">
-    <link rel="stylesheet" href="../../../css/common.css">
-</head>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+        <link href="http://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../../css/common.css">
+        <link rel="stylesheet" href="./downaskmanage.css">
+        <link rel="stylesheet" href="../../../Plugins/datePicker/css/dcalendar.picker.css" />
+    </head>
 
 <body>
     <div class="bodypart" id="upaskmanageList">
@@ -46,11 +49,11 @@
                 <div class="row form-group">
                     <div class="col-lg-4 col-sm-4">
                         <label class="label-style">转入医院：</label>
-                        <input type="text" id="patienName" class="form-control input-style" style="width: 247px">
+                        <input type="text" id="inHospital" class="form-control input-style" style="width: 247px">
                     </div>
                     <div class="col-lg-3 col-sm-3 clearleftright">
                         <label class="label-style">转入科室：</label>
-                        <input type="text" id="idNum" class="form-control input-style" style="width: 180px">
+                        <input type="text" id="dept" class="form-control input-style" style="width: 180px">
                     </div>
                     <div class="col-lg-3 col-sm-3">
                         <label class="label-style">状态：</label>
@@ -182,7 +185,9 @@
             </div>
         </div>
     </div>
-
+    <script src="https://cdn.bootcss.com/jquery/1.9.1/jquery.min.js"></script>
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../../Plugins/datePicker/js/dcalendar.picker.js"></script>
     <script src="./downaskmanage.js"></script>
 </body>
 

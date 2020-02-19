@@ -97,6 +97,28 @@ $(document).ready(function () {
     });
 
 
+    //日历
+    $('#stime').dcalendar();
+    $('#etime').dcalendar();
+    $('#rstime').dcalendar();
+    $('#retime').dcalendar();
+
+    $('#stime').dcalendarpicker({
+        format: 'yyyy-mm-dd'
+    });
+
+    $('#etime').dcalendarpicker({
+        format: 'yyyy-mm-dd'
+    });
+
+    $('#rstime').dcalendarpicker({
+        format: 'yyyy-mm-dd'
+    });
+
+    $('#retime').dcalendarpicker({
+        format: 'yyyy-mm-dd'
+    });
+
     //点击跳转到转诊申请单
     $recepttable.on('click', '.recept-detail', function () {
         var id = $(this).attr('data-id');
